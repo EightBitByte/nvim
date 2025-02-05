@@ -65,20 +65,10 @@ return {
     vim.o.statusline = "%{v:lua.diagnostics_status()}"
 
     -- Define signs (customize these as you like)
-    vim.fn.sign_define("LspDiagnosticsSignError", {
-        text = "",
-        texthl = "LspDiagnosticsDefaultError"
-    })
-    vim.fn.sign_define("LspDiagnosticsSignWarning", {
-        text = "",
-        texthl = "LspDiagnosticsDefaultWarning"
-    })
-    vim.fn.sign_define("LspDiagnosticsSignInformation", {
-        text = "", texthl = "LspDiagnosticsDefaultInformation"
-    })
-    vim.fn.sign_define("LspDiagnosticsSignHint", {
-        text = "", texthl = "LspDiagnosticsDefaultHint"
-    })
+    vim.fn.sign_define("DiagnosticSignError", { text = "", texthl = "DiagnosticSignError" })
+    vim.fn.sign_define("DiagnosticSignWarn", { text = "", texthl = "DiagnosticSignWarn" })
+    vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo" })
+    vim.fn.sign_define("DiagnosticSignHint", { text = "", texthl = "DiagnosticSignHint" })
 
     -- Show diagnostics in a floating window on hover
     vim.api.nvim_create_autocmd("CursorHold", {
