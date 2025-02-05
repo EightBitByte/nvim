@@ -1,3 +1,3 @@
-# nvim
+> nvim
 
-My personal neovim config files.
+My personal neovim config file repo. 
