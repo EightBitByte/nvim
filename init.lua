@@ -1,2 +1,2 @@
 require("core.options")
-require("plugins.init") 
+require("plugins.init")

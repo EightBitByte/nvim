@@ -11,4 +11,5 @@ require("lazy").setup({
   { import = "plugins.treesitter" },
   { import = "plugins.cmp" },
   { import = "plugins.lualine" },
+  { import = "plugins.nvim-tree" },
 })
